@@ -1047,9 +1047,7 @@ html[subframe] body {
     width: auto;
   }
 }</style>
-  <script>// Copyright 2015 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+  <script>// Created by michielko
 
 var mobileNav = false;
 
@@ -1366,7 +1364,7 @@ var IS_TOUCH_ENABLED = 'ontouchstart' in window;
  * @enum {number}
  */
 Runner.config = {
-  ACCELERATION: 0.001,
+  ACCELERATION: 0.006,
   BG_CLOUD_SPEED: 0.2,
   BOTTOM_PAD: 10,
   CLEAR_TIME: 3000,
@@ -2031,8 +2029,6 @@ Runner.prototype = {
  * account the backing store pixel ratio and
  * the device pixel ratio.
  *
- * See article by Paul Lewis:
- * http://www.html5rocks.com/en/tutorials/canvas/hidpi/
  *
  * @param {HTMLCanvasElement} canvas
  * @param {number} opt_width
@@ -2604,7 +2600,7 @@ function Trex(canvas, image) {
  */
 Trex.config = {
   DROP_VELOCITY: -5,
-  GRAVITY: 0.6,
+  GRAVITY: 0.001,
   HEIGHT: 47,
   INIITAL_JUMP_VELOCITY: -10,
   INTRO_DURATION: 1500,
